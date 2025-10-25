@@ -3,193 +3,107 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Gallery Produk Software</title>
-  <meta name="description" content="Galeri produk software — screenshot, demo video, dan deskripsi singkat." />
+  <title>Portfolio Software Projects</title>
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3b82f6}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,-apple-system,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071428 0%,var(--bg) 100%);color:#e6eef8}
-    .container{max-width:1100px;margin:36px auto;padding:0 20px}
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
-    h1{font-size:20px;margin:0}
-    p.lead{color:var(--muted);margin:4px 0 0;font-size:13px}
-
-    /* grid */
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:12px;padding:10px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-    .media{border-radius:8px;overflow:hidden;background:#071122;display:block;position:relative}
-    .media img,.media video{width:100%;height:170px;object-fit:cover;display:block}
-    .card h3{font-size:15px;margin:10px 0 4px}
-    .card p{margin:0;color:var(--muted);font-size:13px}
-    .meta{display:flex;gap:8px;align-items:center;margin-top:8px}
-    .tag{font-size:12px;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03);color:var(--muted)}
-    .btn{appearance:none;border:0;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.04);color:#dff0ff;cursor:pointer}
-
+    :root {--bg:#0e172a;--fg:#f8fafc;--muted:#94a3b8;--accent:#3b82f6;}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);}
+    .container{max-width:1100px;margin:40px auto;padding:0 16px;}
+    h1{text-align:center;margin-bottom:32px;}
+    .project{background:rgba(255,255,255,0.05);border-radius:12px;margin-bottom:30px;padding:20px;}
+    .project h2{margin:0 0 10px;font-size:20px;}
+    .project p{margin:0 0 16px;color:var(--muted);}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;}
+    .gallery img,.gallery video{width:100%;height:350px;object-fit:contain;border-radius:5px;cursor:pointer;}
     /* Lightbox */
-    .lightbox{position:fixed;inset:0;background:rgba(2,6,23,0.8);display:flex;align-items:center;justify-content:center;padding:20px;z-index:999;visibility:hidden;opacity:0;transition:opacity .2s}
-    .lightbox.open{visibility:visible;opacity:1}
-    .lightbox .frame{max-width:1100px;max-height:90vh;width:100%;background:var(--card);border-radius:12px;padding:10px;box-shadow:0 18px 44px rgba(0,0,0,0.6);display:flex;flex-direction:column}
-    .toolbar{display:flex;justify-content:space-between;align-items:center;padding:6px}
-    .lightbox media, .lightbox img, .lightbox video{max-height:70vh;max-width:100%;border-radius:8px}
-    .caption{color:var(--muted);font-size:14px;padding:6px 8px}
-
-    /* responsive tweaks */
-    @media (max-width:520px){.media img,.media video{height:140px}}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.8);display:none;align-items:center;justify-content:center;z-index:1000;}
+    .lightbox.open{display:flex;}
+    .lightbox img,.lightbox video{max-width:100%;max-height:98vh;}
+    .close-btn{position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.15);color:white;border:none;padding:8px 14px;border-radius:6px;cursor:pointer;}
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <div>
-        <h1>Gallery Produk Software</h1>
-        <p class="lead">Screenshot, demo video, dan deskripsi singkat — siap dipakai di GitHub Pages.</p>
+    <h1>Galeri Software</h1>
+
+    <!-- Project 1 -->
+    <section class="project">
+      <h2>4RapidLearn – Aplikasi Edukasi</h2>
+      <p>Flutter mobile (provider & go_router) & server php lumen 10 (Reactjs,elastic/eui,react-router-dom,esbuild,ckeditor)</p>
+      <div class="gallery">
+        <img src="rapidlearn/1.jpg">
+        <img src="rapidlearn/2.jpg">
+        <img src="rapidlearn/3.jpg">
+        <img src="rapidlearn/4.jpg">
+        <img src="rapidlearn/5.jpg">
+        <img src="rapidlearn/7.jpg">
+        <img src="rapidlearn/8.jpg">
+        <img src="rapidlearn/9.jpg">
+        <img src="rapidlearn/10.jpg">
+        <img src="rapidlearn/11.jpg">
+        <img src="rapidlearn/12.jpg">
+        <img src="rapidlearn/13.jpg">
+        <img src="rapidlearn/14.jpg">
+        <img src="rapidlearn/15.jpg">
+        <img src="rapidlearn/16.jpg">
+        <img src="rapidlearn/17.jpg">
+        <img src="rapidlearn/18.jpg">
+        <img src="rapidlearn/19.jpg">
+        <img src="rapidlearn/20.jpg">
+        <img src="rapidlearn/21.jpg">
+        <img src="rapidlearn/code.png">
+        <img src="rapidlearn/code_react.png">
+        <img src="rapidlearn/code_flutter.png">        
+        <img src="rapidlearn/web01.png">
+        <img src="rapidlearn/web02.png">
+        <img src="rapidlearn/web03.png">
+        <img src="rapidlearn/web04.png">
+        <img src="rapidlearn/web05.png">
+        <!-- <video src="rapidlearn/project1-demo.mp4" muted playsinline></video> -->
       </div>
-      <div style="text-align:right">
-        <small style="color:var(--muted)">Tips: letakkan file di <code>/assets/images/</code> &amp; <code>/assets/videos/</code></small>
+    </section>
+
+    <!-- Project 2 -->
+    <section class="project">
+      <h2>Belajar online & Smart Absensi</h2>
+      <p>Belajar online (PHP & React-Native) 2019-2022 & Smart Absensi (Golang & React-native)</p>
+      <div class="gallery" style="display: flex;">
+        <img src="smart-belajar.png">
       </div>
-    </header>
-
-    <main>
-      <section class="grid" id="gallery">
-        <!-- Item 1: image -->
-        <article class="card">
-          <a class="media" href="#" data-type="image" data-src="assets/images/product1-screenshot.jpg" data-title="App Manajemen Pro - Tampilan Dashboard">
-            <img src="assets/images/product1-thumb.jpg" alt="App Manajemen Pro - Dashboard" loading="lazy">
-          </a>
-          <h3>App Manajemen Pro</h3>
-          <p>Dashboard ringkas untuk manajemen tugas dan proyek.</p>
-          <div class="meta">
-            <span class="tag">Web</span>
-            <span class="tag">React</span>
-            <button class="btn" data-open="0">Lihat</button>
-          </div>
-        </article>
-
-        <!-- Item 2: video -->
-        <article class="card">
-          <a class="media" href="#" data-type="video" data-src="assets/videos/product2-demo.mp4" data-title="Fitur Real-time Collaboration">
-            <video src="assets/videos/product2-preview.mp4" muted playsinline preload="metadata" poster="assets/images/product2-thumb.jpg"></video>
-          </a>
-          <h3>Realtime Collab</h3>
-          <p>Demo singkat kolaborasi waktu nyata (video).</p>
-          <div class="meta">
-            <span class="tag">Electron</span>
-            <span class="tag">WebRTC</span>
-            <button class="btn" data-open="1">Putar</button>
-          </div>
-        </article>
-
-        <!-- Item 3: image -->
-        <article class="card">
-          <a class="media" href="#" data-type="image" data-src="assets/images/product3-screenshot.jpg" data-title="Editor Visual - Mode Gelap">
-            <img src="assets/images/product3-thumb.jpg" alt="Editor Visual - Mode Gelap" loading="lazy">
-          </a>
-          <h3>Editor Visual</h3>
-          <p>Editor WYSIWYG ringan untuk dokumentasi.</p>
-          <div class="meta">
-            <span class="tag">Desktop</span>
-            <span class="tag">GTK</span>
-            <button class="btn" data-open="2">Lihat</button>
-          </div>
-        </article>
-
-        <!-- Tambah item lain sesuai kebutuhan -->
-
-      </section>
-    </main>
+    </section>
   </div>
 
   <!-- Lightbox -->
-  <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true">
-    <div class="frame" role="document">
-      <div class="toolbar">
-        <div style="font-weight:600;font-size:14px" id="lbTitle">Judul</div>
-        <div>
-          <button class="btn" id="closeBtn">Tutup</button>
-        </div>
-      </div>
-      <div id="lbContent" style="display:flex;align-items:center;justify-content:center;padding:8px;flex:1">
-        <!-- content injected here -->
-      </div>
-      <div class="caption" id="lbCaption"></div>
-    </div>
+  <div id="lightbox" class="lightbox">
+    <button class="close-btn" id="closeBtn">Tutup ✕</button>
+    <div id="lb-content"></div>
   </div>
 
   <script>
-    // Simple lightbox logic
-    const gallery = document.getElementById('gallery');
     const lightbox = document.getElementById('lightbox');
-    const lbContent = document.getElementById('lbContent');
-    const lbTitle = document.getElementById('lbTitle');
-    const lbCaption = document.getElementById('lbCaption');
+    const lbContent = document.getElementById('lb-content');
     const closeBtn = document.getElementById('closeBtn');
 
-    function openLightbox(type, src, title){
-      lbContent.innerHTML = '';
-      lbTitle.textContent = title || '';
-      lbCaption.textContent = type === 'video' ? 'Tekan tombol play untuk memulai video.' : '';
-
-      if(type === 'image'){
-        const img = document.createElement('img');
-        img.src = src; img.alt = title || '';
-        img.loading = 'eager';
-        lbContent.appendChild(img);
-      } else if(type === 'video'){
-        const video = document.createElement('video');
-        video.src = src; video.controls = true; video.autoplay = false; video.preload = 'metadata'; video.style.maxHeight = '70vh';
-        lbContent.appendChild(video);
-      }
-
-      lightbox.classList.add('open');
-      lightbox.setAttribute('aria-hidden','false');
-    }
-
-    function closeLightbox(){
-      // pause any playing video
-      const vid = lbContent.querySelector('video');
-      if(vid) try{vid.pause();}catch(e){}
-      lightbox.classList.remove('open');
-      lightbox.setAttribute('aria-hidden','true');
-      lbContent.innerHTML = '';
-    }
-
-    // open on click of card media or button
-    gallery.addEventListener('click', e => {
-      const a = e.target.closest('.media');
-      if(a){
-        e.preventDefault();
-        const type = a.dataset.type;
-        const src = a.dataset.src;
-        const title = a.dataset.title;
-        openLightbox(type, src, title);
-        return;
-      }
-
-      const btn = e.target.closest('.btn');
-      if(btn){
-        // find the card index to open corresponding media
-        const card = btn.closest('.card');
-        const link = card.querySelector('.media');
-        if(link){
-          const type = link.dataset.type;
-          const src = link.dataset.src;
-          const title = link.dataset.title;
-          openLightbox(type, src, title);
+    document.querySelectorAll('.gallery img, .gallery video').forEach(el=>{
+      el.addEventListener('click',()=>{
+        lbContent.innerHTML = '';
+        if(el.tagName === 'IMG'){
+          const img = document.createElement('img');
+          img.src = el.src;
+          lbContent.appendChild(img);
+        }else{
+          const vid = document.createElement('video');
+          vid.src = el.src;
+          vid.controls = true;
+          vid.autoplay = true;
+          lbContent.appendChild(vid);
         }
-      }
+        lightbox.classList.add('open');
+      });
     });
 
-    // close handlers
-    closeBtn.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', e=>{ if(e.target === lightbox) closeLightbox(); });
-    document.addEventListener('keydown', e=>{ if(e.key === 'Escape') closeLightbox(); });
-
-    // Accessibility: add keyboard focus to cards
-    document.querySelectorAll('.media').forEach((el,i)=>{
-      el.setAttribute('tabindex','0');
-      el.addEventListener('keydown', ev=>{ if(ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); el.click(); } });
-    });
+    closeBtn.addEventListener('click',()=> lightbox.classList.remove('open'));
+    lightbox.addEventListener('click',e=>{ if(e.target===lightbox) lightbox.classList.remove('open'); });
+    document.addEventListener('keydown',e=>{ if(e.key==='Escape') lightbox.classList.remove('open'); });
   </script>
-
 </body>
 </html>
